@@ -1,0 +1,11 @@
+trial,best_val_acc,best_val_loss,epochs,unfrozen_layers,lr,dropout,batch_size,lr_schedule,rationale
+1,0.715106725692749,1.5980260372161865,20,5,1e-06,0.7,32,reduce,Minimal unfreezing + strong regularization for stability
+2,0.9610016345977783,0.17471010982990265,20,10,3e-06,0.5,32,reduce,Moderate adaptation with standard regularization
+3,0.9737274050712585,0.13510213792324066,20,15,1e-05,0.3,16,constant,Aggressive unfreezing + lower regularization
+4,0.9655172228813171,0.1503835916519165,20,8,5e-06,0.6,32,reduce,Prevent overfitting in small dataset scenarios
+5,0.9523809552192688,0.20883353054523468,20,12,2e-06,0.4,16,reduce,For limited GPU memory with stable training
+6,0.9733169078826904,0.12172798067331314,20,10,1e-05,0.5,32,reduce,Test LR reduction effectiveness
+7,0.38669949769973755,3.3926687240600586,20,3,5e-07,0.6,64,constant,Minimal feature adaptation test
+8,0.9712643623352051,0.1351063847541809,20,20,5e-06,0.4,16,reduce,Maximum feature adaptation capacity
+9,0.9724959135055542,0.14660759270191193,20,10,0.0001,0.5,32,reduce,Identify upper LR bounds
+10,0.9655172228813171,0.156413733959198,20,12,3e-06,0.45,24,reduce,SOTA-inspired balanced configuration
