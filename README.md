@@ -8,6 +8,10 @@ Before this project, I worked on a celebrity face recognition model using the [D
 
 From that experience, I became interested in **making a face recognition model adaptable to new people in real time** — with minimal effort from the user — and deployable in an interactive way using **Streamlit**.
 
+
+[![YouTube Demo](https://img.youtube.com/vi/TQwCLnXEgLo/0.jpg)](https://youtu.be/TQwCLnXEgLo)
+
+
 ## 🛠️ How the System Was Built
 
 At first, I fine-tuned the VGGFace model to improve embedding quality and better distinguish between people.
